@@ -1,0 +1,112 @@
+:root {
+  --green: #256A58; 
+  --white: #fff;
+  --grey: #D9D9D9;
+  --orange: #ff9600; 
+  --bg-color: #008CBA;
+  
+}
+
+
+.logo img {
+  height: 135px;
+  width: 131px;
+} 
+
+
+body {
+  background-image: url("../capa/img_capa/fundo-cinz.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.total {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  flex: 69px;
+  text-align: center; 
+  margin: 0 10px; 
+}
+
+
+
+.Conteudo button{
+    width: 193px;
+    height: 57px;
+    object-fit: contain;
+    border-radius: 53px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--orange);
+  
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    border: none;
+    
+    font-family: "Archivo Black", sans-serif;
+  }
+
+.Conteudo a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.Jogos button{
+  width: 193px;
+  height: 57px;
+  object-fit: contain;
+
+  border-radius: 53px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--orange);
+
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border: none;
+  
+  font-family: "Archivo Black", sans-serif;
+}
+
+.Jogos a {
+text-decoration: none;
+color: var(--white);
+}
+
+.Sobre_nos button{
+  width: 193px;
+  height: 57px;
+  object-fit: contain;
+
+  border-radius: 53px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--orange);
+
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border: none;
+  
+  font-family: "Archivo Black", sans-serif;
+}
+
+.Sobre_nos a{
+text-decoration: none;
+color: var(--white);
+}
+

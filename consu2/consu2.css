@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --green: #256A58; 
+    --bg-color: #fff;
+    --grey: #D9D9D9;
+    --orange: #ff9600; 
+    --bg-color2: #008CBA;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top:0% ;
+}
+
+#fundo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../capa/img_capa/2040_R0lVIERBTiA0NjgtMTA.jpg);
+    background-size: cover;
+}
+
+.retangulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    width: 49rem;
+    height: 29rem;
+    margin-top: -2rem;
+    background-color: var(--bg-color);
+   
+    border-radius: 3.31rem;
+    border-width: 0.9rem;
+    border-style: solid;
+    border-color: var(--green);
+}
+
+.consu2 {
+  position: absolute;
+  color: var(--green);
+  z-index: 3;
+
+  margin-left: 32rem;
+  margin-top: -25.5rem;
+  text-align: center;
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+
+}
+
+.retangulo2 {
+    position: relative;
+    margin-top: -3rem;
+    
+    width: 49rem;
+    height: 4.59rem;
+    background-color: var(--green);
+}
+
+.logo img{
+    position: absolute;
+    top: 1rem;
+    margin-top: -0.5rem;
+    margin-left: 0.5rem;
+
+    width: 5rem;
+    height: 5rem;
+}
+
+.sapo img{
+   margin-right: 13.1rem;
+   margin-left: 13.1rem;
+   width: 22.8rem;
+   height: 22.37rem;
+   top: 1.17rem;
+   margin-top: 4.05rem;
+}
+
+.mascote img {
+    position: absolute;
+    top: 2.025rem;
+    margin-top: 15.2rem;
+    margin-left: 40.5rem;
+    
+    width: 10rem;
+    height: 11rem;
+}
+
+.texto-consu2 {
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    margin-top: -3.5rem;
+    color: var(--bg-color);
+    margin-right: 6rem;
+    text-align: center;
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    top: 2.5rem;
+}
+  
+.icons img {
+   width: 4.5rem;
+   height: 4.5rem;
+   margin: 0.2rem;
+}
+

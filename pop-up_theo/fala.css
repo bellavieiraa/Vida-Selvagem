@@ -1,0 +1,157 @@
+:root {
+    --green: #256A58; 
+    --white: #fff;
+    --grey: #D9D9D9;
+    --orange: #ff9600; 
+    --bg-color: #008CBA;
+    
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+#fundo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../capa/img_capa/fundo\ 2.png);
+    background-size: cover;
+}
+
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+} 
+
+
+.retangulo {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1402px;
+    height: 698px;
+    margin-top: 1rem;
+    margin-left: -20px;
+    background-color:#fff;
+    border-radius: 53px;
+    border-width: 19px;
+    border-style: solid;
+    border-color:#256A58;
+    
+}
+
+.box2 {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 414px;
+    background-color: var(--white);
+
+    border-radius: 41px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #256A58;
+    
+}
+
+.text {
+    font-family: "Inter", sans-serif;
+    color: #256A58;
+    font-size:34px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.mascote img {
+    position: absolute;
+    top: 15rem;
+    margin-top: 12rem;
+    margin-left: 64.5rem;
+    
+    width: 15rem;
+    height: 15rem;
+}
+
+.imgss {
+    display: flex;
+    gap: 15px; 
+    position: absolute;
+    top: 50rem;
+    margin-left: 25rem;
+
+}
+
+.voltar button{
+    width: 193px;
+    height: 57px;
+    object-fit: contain;
+    border-radius: 53px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--orange);
+  
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    border: none;
+    margin-top: 12rem;
+    margin-left: 64rem;
+    
+    width: 15rem;
+    height: 15rem;
+    
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.voltar a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.ir button{
+    width: 193px;
+    height: 57px;
+    object-fit: contain;
+  
+    border-radius: 53px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--orange);
+  
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    border: none;
+    margin-left: 10rem;
+    
+    font-family: "Archivo Black", sans-serif;
+  }
+  
+  .ir a {
+  text-decoration: none;
+  color: var(--white);
+  }

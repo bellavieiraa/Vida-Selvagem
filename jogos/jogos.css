@@ -1,0 +1,93 @@
+:root {
+    --green: #256A58;
+    --white: #fff;
+    --grey: #D9D9D9;
+    --orange: #ff9600;
+    --bg-color: #008CBA;
+
+}
+
+
+.logo img {
+    height: 135px;
+    width: 131px;
+}
+
+
+body {
+    background-image: url("../capa/img_capa/fundo-cinz.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.total {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 69px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+
+.adv.pal a {
+    font-family: "Archivo Black", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.adv.pal button {
+    width: 278.2px;
+    height: 89.1px;
+    object-fit: contain;
+
+    border: none;
+    border-radius: 53px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--orange);
+  
+    font-size: 30px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    
+    font-family: "Archivo Black", sans-serif;
+
+}
+
+.memory a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.memory button {
+    width: 257px;
+    height: 74px;
+    object-fit: contain;
+
+    border: none;
+    border-radius: 53px;
+    box-shadow: 0;
+    background-color: var(--orange);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+
+    font-family: "Archivo Black", sans-serif;
+}

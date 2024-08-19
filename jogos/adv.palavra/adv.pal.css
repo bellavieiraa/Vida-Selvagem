@@ -1,0 +1,117 @@
+:root {
+  --green: #256A58;
+  --white: #fff;
+  --grey: #D9D9D9;
+  --orange: #ff9600;
+  --bg-color: #008CBA;
+
+}
+
+
+
+.mascote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#fundo {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../capa/img_capa/fundo\ 2.png);
+  background-size: cover;
+}
+
+
+
+.retangulo {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1402px;
+  height: 698px;
+  margin-top: 1rem;
+  margin-left: -20px;
+  background-color:#fff;
+  border-radius: 53px;
+  border-width: 19px;
+  border-style: solid;
+  border-color:#256A58;
+  
+}
+
+
+.retangulo2 {
+  position: relative;
+  margin-top: -3rem;
+
+  width: 60rem;
+  height: 4.59rem;
+  background-color: var(--green);
+  margin-inline: 11rem;
+  margin-block-start: -25rem;
+  right: 2rem;
+  top: -10%;
+
+
+}
+
+.icons {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.adivinha {}
+
+.texto {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+
+.logo img {
+  position: absolute;
+  top: 4rem;
+  margin-top: -0.5rem;
+  margin-left: 10rem;
+
+
+  width: 5rem;
+  height: 5rem;
+}
+
+.texto2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.responder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
