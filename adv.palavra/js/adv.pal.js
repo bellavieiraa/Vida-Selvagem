@@ -1,62 +1,62 @@
-const inputs = document.querySelector(".inputs"),
-hintTag = document.querySelector(".hint span"),
-guessLeft = document.querySelector(".guess-left span"),
-wrongLetter = document.querySelector(".wrong-letter span"),
-resetBtn = document.querySelector(".reset-btn"),
-typingInput = document.querySelector(".typing-input");
+const entradas = document.querySelector(".entradas"),
+dicaElemento = document.querySelector(".dica span"),
+chancesRestantes = document.querySelector(".tentativas-restantes span"),
+letrasErradas = document.querySelector(".letras-erradas span"),
+botaoReiniciar = document.querySelector(".botao-reiniciar"),
+entradaDigitacao = document.querySelector(".entrada-digitacao");
 
-let word, maxGuesses, incorrectLetters = [], correctLetters = [];
+let palavra, maxTentativas, letrasIncorretas = [], letrasCorretas = [];
 
-function randomWord() {
-    let ranItem = wordList[Math.floor(Math.random() * wordList.length)];
-    word = ranItem.word;
-    maxGuesses = word.length >= 5 ? 8 : 6;
-    correctLetters = []; incorrectLetters = [];
-    hintTag.innerText = ranItem.hint;
-    guessLeft.innerText = maxGuesses;
-    wrongLetter.innerText = incorrectLetters;
+function palavraAleatoria() {
+    let itemAleatorio = listaPalavras[Math.floor(Math.random() * listaPalavras.length)];
+    palavra = itemAleatorio.palavra;
+    maxTentativas = palavra.length >= 5 ? 8 : 6;
+    letrasCorretas = []; letrasIncorretas = [];
+    dicaElemento.innerText = itemAleatorio.dica;
+    chancesRestantes.innerText = maxTentativas;
+    letrasErradas.innerText = letrasIncorretas;
 
     let html = "";
-    for (let i = 0; i < word.length; i++) {
+    for (let i = 0; i < palavra.length; i++) {
         html += `<input type="text" disabled>`;
-        inputs.innerHTML = html;
+        entradas.innerHTML = html;
     }
 }
-randomWord();
+palavraAleatoria();
 
-function initGame(e) {
-    let key = e.target.value.toLowerCase();
-    if(key.match(/^[A-Za-z]+$/) && !incorrectLetters.includes(` ${key}`) && !correctLetters.includes(key)) {
-        if(word.includes(key)) {
-            for (let i = 0; i < word.length; i++) {
-                if(word[i] == key) {
-                    correctLetters += key;
-                    inputs.querySelectorAll("input")[i].value = key;
+function iniciarJogo(e) {
+    let tecla = e.target.value.toLowerCase();
+    if(tecla.match(/^[A-Za-z]+$/) && !letrasIncorretas.includes(` ${tecla}`) && !letrasCorretas.includes(tecla)) {
+        if(palavra.includes(tecla)) {
+            for (let i = 0; i < palavra.length; i++) {
+                if(palavra[i] == tecla) {
+                    letrasCorretas += tecla;
+                    entradas.querySelectorAll("input")[i].value = tecla;
                 }
             }
         } else {
-            maxGuesses--;
-            incorrectLetters.push(` ${key}`);
+            maxTentativas--;
+            letrasIncorretas.push(` ${tecla}`);
         }
-        guessLeft.innerText = maxGuesses;
-        wrongLetter.innerText = incorrectLetters;
+        chancesRestantes.innerText = maxTentativas;
+        letrasErradas.innerText = letrasIncorretas;
     }
-    typingInput.value = "";
+    entradaDigitacao.value = "";
 
     setTimeout(() => {
-        if(correctLetters.length === word.length) {
-            alert(`Parabéns! Você descobriu a palavra. ${word.toUpperCase()}`);
-            return randomWord();
-        } else if(maxGuesses < 1) {
+        if(letrasCorretas.length === palavra.length) {
+            alert(`Parabéns! Você descobriu a palavra. ${palavra.toUpperCase()}`);
+            return palavraAleatoria();
+        } else if(maxTentativas < 1) {
             alert("Fim de jogo! Acabaram suas tentativas.");
-            for(let i = 0; i < word.length; i++) {
-                inputs.querySelectorAll("input")[i].value = word[i];
+            for(let i = 0; i < palavra.length; i++) {
+                entradas.querySelectorAll("input")[i].value = palavra[i];
             }
         }
     }, 100);
 }
 
-resetBtn.addEventListener("click", randomWord);
-typingInput.addEventListener("input", initGame);
-inputs.addEventListener("click", () => typingInput.focus());
-document.addEventListener("keydown", () => typingInput.focus());
+botaoReiniciar.addEventListener("click", palavraAleatoria);
+entradaDigitacao.addEventListener("input", iniciarJogo);
+entradas.addEventListener("click", () => entradaDigitacao.focus());
+document.addEventListener("keydown", () => entradaDigitacao.focus());

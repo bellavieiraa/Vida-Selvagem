@@ -3,6 +3,7 @@
     --white: #fff;
     --grey: #D9D9D9;
     --orange: #ff9600; 
+    --font-size-base: 16px; /* added a base font size for rem units */
 }
 
 * {
@@ -11,106 +12,111 @@
     box-sizing: border-box;
 }
 
-
 body {
-    background-image: url("../capa/img_capa/fundo-cinz.png");
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top:0% ;
+    background-image: url('./img-white/fundo-cinz.png');
+    width: 100vw;
+    height: 100vh;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-  
-    background-size:cover;
-    flex-direction: column;
-
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; 
+    /* reduced 0.625rem to 0.469rem and 1.25rem to 0.938rem */
 }
-
 
 header {
     background-color: var(--green); 
-    padding: 35px;
+    /* reduced 2.188rem to 1.641rem */
     display: flex;
     text-align: center;
-    height: 166px; 
+    height: 7.813rem; /* reduced 10.375rem to 7.813rem */
     width: 100%;
 }
 
 .logo img {
-    width: 131px;
-    height: 135px;
-    margin: 1px 730px 0px 5px;
-} 
-
+    width: 6.141rem; /* reduced 8.188rem to 6.141rem */
+    height: 6.328rem; /* reduced 8.438rem to 6.328rem */
+    margin: 0.1rem 34.219rem 0px 0.5rem; /* reduced 0.063rem to 0.047rem, 45.625rem to 34.219rem, and 0.313rem to 0.234rem */
+}
 
 .imgss {
     display: flex;
-    gap: 15px; 
+    gap: 0.703rem; /* reduced 0.938rem to 0.703rem */
     position: absolute;
-    top: 30px; 
-    right: 20px; 
+    top: 1.406rem; /* reduced 1.875rem to 1.406rem */
+    right: 0.938rem; /* reduced 1.25rem to 0.938rem */
     margin-left: auto; 
+    margin-top: -0.5rem;
 }
 
-    
 .retangulo {
     display: flex;
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 823px;
-    height: 411px;
+    width: 38.609rem; /* reduced 51.438rem to 38.609rem */
+    height: 19.266rem; /* reduced 25.688rem to 19.266rem */
     background-color: var(--white);
-    margin-bottom: 20px; 
+     /* reduced 1.25rem to 0.938rem */
 
-    border-radius: 20px;
-    border-width: 1px;
+    border-radius: 0.938rem; /* reduced 1.25rem to 0.938rem */
+    border-width: 0.047rem; /* reduced 0.063rem to 0.047rem */
     border-style: solid;
     border-color: var(--green);
-    
 }
 
-
-.theo {
-    align-items: center;
-    height: 9rem;
+.theo img{
+   margin-left: 22rem;
+    width: 16rem;
+     /* reduced 5.625rem to 4.219rem */
 }
 
 .text {
+    position: absolute;
     font-family: "Inter", sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    width: 20rem;
     color: var(--green);
-    font-size:48px;
+    font-size: 2.5rem; /* reduced 3rem to 2.25rem */
     text-align: center;
-    margin-top: 8rem;
+   
+   
 }
 
 button {
-    width: 254.9px;
-    height: 97.99px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 11.953rem; /* reduced 15.938rem to 11.953rem */
+    height: 4.594rem; /* reduced 6.125rem to 4.594rem */
     object-fit: contain;
-    border-radius: 53px;
+    border-radius: 2.469rem; 
+    border: #fff;/* reduced 3.313rem to 2.469rem */
     background-color: #ff9600;
     justify-content: center;
     align-items: center;
-    margin: 200px;
-    margin-left: 750px;
-    margin-bottom: 117.96px;
-    margin-top: 800px;
-    border: none;
     display: flex;
-}
+    margin-top: 15rem;
 
+    
+}
 
 button a {
     text-decoration: none;
-    color: var(--white);
-    font-size: 30px;
     font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: var(--white);
+    font-size: 1.406rem; 
 }
-

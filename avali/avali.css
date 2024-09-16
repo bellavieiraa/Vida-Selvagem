@@ -1,0 +1,42 @@
+body {
+  background-image: url("../capa/img_capa/2040_R0lVIERBTiA0NjgtMTA.jpg");
+}
+
+h1 {
+  color: #1F6A58;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+ height: 600px;
+ margin-left: 550px;
+border-radius: 10px;
+border: 10px solid #1F6A58;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 700px;
+  width: 200px;
+  height: 50px;
+  color: #ffff;
+  background-color: #1F6A58;
+  border-radius: 50px;
+  position: absolute;
+  top: 2.025rem;
+  margin-top: 40rem;
+  margin-left: 41rem;
+  font-size: large;
+  
+}
+
+.tigre {
+  position: absolute;
+  top: 2.025rem;
+  margin-top: 33rem;
+  margin-left: 52rem;
+  
+  width: 10rem;
+  height: 11rem;  
+}

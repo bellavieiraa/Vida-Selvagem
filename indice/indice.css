@@ -2,111 +2,84 @@
   --green: #256A58; 
   --white: #fff;
   --grey: #D9D9D9;
-  --orange: #ff9600; 
+  --orange: #ff9500; 
   --bg-color: #008CBA;
-  
 }
 
-
 .logo img {
-  height: 135px;
-  width: 131px;
-} 
-
+  height: 6rem;
+  width: 6rem;
+}
 
 body {
-  background-image: url("../capa/img_capa/fundo-cinz.png"); 
+  background-image: url("../capa/img_capa/2040_R0lVIERBTiA0NjgtMTA.jpg"); 
+  width: auto;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
-
 
 .total {
   display: flex;
   justify-content: space-around;
   align-items: center; 
-  flex: 69px;
+  flex: 3rem;
   text-align: center; 
-  margin: 0 10px; 
+  margin: 0 10rem; 
 }
 
+/* Imagens com transição suave e efeito de hover para aumentar o tamanho */
+.Conteudo img,
+.Jogos img,
+.Sobre_nos img {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  width: 17rem;
+  transition: transform 0.3s ease; /* Adiciona a transição */
+}
 
+.Conteudo img:hover,
+.Jogos img:hover,
+.Sobre_nos img:hover {
+  transform: scale(1.2); /* Aumenta em 20% ao passar o mouse */
+}
 
-.Conteudo button{
-    width: 193px;
-    height: 57px;
-    object-fit: contain;
-    border-radius: 53px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background-color: var(--orange);
+.Conteudo button,
+.Jogos button,
+.Sobre_nos button {
+  width: 9rem; 
+  height: 2.5rem; 
+  object-fit: contain;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--orange);
   
-    font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    border: none;
-    
-    font-family: "Archivo Black", sans-serif;
-  }
+  font-size: 1.2rem; 
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border: none;
+  
+  margin: 0 5rem;
+  font-family: "Archivo Black", sans-serif;
+  transition: transform 0.3s ease;
+}
 
-.Conteudo a {
+.Conteudo button:hover,
+.Jogos button:hover,
+.Sobre_nos button:hover {
+  transform: scale(1.2); /* Aumenta em 20% ao passar o mouse */
+}
+
+.Conteudo a,
+.Jogos a,
+.Sobre_nos a {
   text-decoration: none;
   color: var(--white);
+  display: inline-block;
 }
-
-.Jogos button{
-  width: 193px;
-  height: 57px;
-  object-fit: contain;
-
-  border-radius: 53px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-color: var(--orange);
-
-  font-size: 30px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  border: none;
-  
-  font-family: "Archivo Black", sans-serif;
-}
-
-.Jogos a {
-text-decoration: none;
-color: var(--white);
-}
-
-.Sobre_nos button{
-  width: 193px;
-  height: 57px;
-  object-fit: contain;
-
-  border-radius: 53px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-color: var(--orange);
-
-  font-size: 30px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  border: none;
-  
-  font-family: "Archivo Black", sans-serif;
-}
-
-.Sobre_nos a{
-text-decoration: none;
-color: var(--white);
-}
-

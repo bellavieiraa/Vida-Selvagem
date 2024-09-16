@@ -1,4 +1,8 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
 :root {
   --green: #256A58; 
@@ -6,101 +10,104 @@
   --grey: #D9D9D9;
   --orange: #ff9600; 
   --bg-color: #008CBA;
-  
+  font-size: 16px; 
 }
-
-
-
-.botao button {
-  width: 269px;
-  height: 114.1px;
-  object-fit: contain;
-  border-radius: 53px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ff9600;
-  text-align: center;
-  justify-content: center;
-  margin: 20px;
-  margin-left: 335px;
-  font-size: 30px;
-  border: none;
-}
-
-.botao a {
-  color: var(--white);
-  text-decoration: none;
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 body {
-  background-image: url("./capa/img_capa/fundo\ 2.png");
+  background-image: url("./capa/img_capa/fundo\ 21.png");
+  width: auto;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
   
+} 
+
+ 
+
+.vamos {
+  
+  width: 12rem; /* reduced 15.938rem to 11.953rem */
+  height: 5rem; /* reduced 6.125rem to 4.594rem */
+  object-fit: contain;
+  border-radius: 2.5rem; 
+  border: #fff;/* reduced 3.313rem to 2.469rem */
+  background-color: #ff9600;
+ 
+
+  position: relative;
+  left: 34.5%; 
+  transform: translateX(-50%);
+}
+
+.textos {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+a {
+  
+  color: var(--white);
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
   font-family: 'Arial', sans-serif;
-  margin: 0;
   padding: 0;
 }
 
 header {
   background-color: var(--green); 
-  padding: 10px;
+  padding: 0.625rem; 
   display: flex;
   text-align: center;
 }
 
 .logo img {
-  height: 135px;
-  width: 131px;
+  height: 6rem; 
+  width: 6rem; 
 } 
 
 
-p.principal {
-  color: var(--green);
-  text-align: left;
+p.principal, p.exploradores {
+  text-align: center;
+  justify-content: center;
   font-family: "Lemon", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 87px;
-  margin-left: 183px;
-  margin-top: 100px;
+  font-size: 6rem;
+
+  margin-left: -30rem;
 }
 
-p.exploradores {
-  color: var(--green);
-  text-align: left;
-  padding: 20px;
-  font-family: "Lemon", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 87px;
-  margin-left: 96px;
+p.paragrafo {
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--green); 
+  font-size: 1.5rem; 
 
+  margin-left: -30rem;
+  margin-bottom: 2rem;
 }
+
 
 p {
   color: var(--green); 
-  font-size: 26px;
-  margin: 10px 0;
+  font-size: 3rem; 
+  margin: 0.625rem 0; 
   font-family: "Lemon", serif;
   font-weight: 400;
   font-style: normal;
-  margin-left: 190.55PX;
+  
 }
-
-p.floresta {
-  color: var(--green); 
-  font-size: 26px;
-  margin: 10px 0;
-  font-family: "Lemon", serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-left: 338.95px;
-  margin-bottom: 66.66px;
-}
-
 
