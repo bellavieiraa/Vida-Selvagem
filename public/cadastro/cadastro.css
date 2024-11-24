@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --green: #256A58; 
+    --white: #fff;
+    --grey: #D9D9D9;
+    --orange: #ff9600; 
+    --bg-color: #008CBA;
+    font-size: 16px; 
+}
+
+body {
+  background-image: url("../theo/img-white/fundo-cinz.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
+}
+
+header {
+   background-color: var(--green); 
+   padding: 0.625rem; 
+   display: flex;
+   text-align: center;
+}
+
+  
+.logo img {
+    height: 6rem; 
+    width: 6rem; 
+} 
+
+
+.entrar {
+  z-index: 2;
+  width: 10rem; /* reduced 15.938rem to 11.953rem */
+  height: 3rem; /* reduced 6.125rem to 4.594rem */
+  object-fit: contain;
+
+  border-radius: 2.5rem; 
+  border: #fff;/* reduced 3.313rem to 2.469rem */
+  background-color: #ff9600;
+  
+  margin-top: 1.5rem;
+  right: 17.5rem;
+  position: fixed;
+  
+}
+
+.cadastro {
+  z-index: 2;
+  width: 10rem; /* reduced 15.938rem to 11.953rem */
+  height: 3rem; /* reduced 6.125rem to 4.594rem */
+  object-fit: contain;
+
+  border-radius: 2.5rem; 
+  border: #fff;/* reduced 3.313rem to 2.469rem */
+  background-color: #ff9600;
+  
+  margin-top: 1.5rem;
+  right: 4.5rem;
+  position: fixed;
+  
+}
+
+
+
+main {
+    background: var(--green); 
+    max-width: 40rem;
+    margin-inline: auto;
+    margin-top: 6.4rem;
+    padding: 3rem;
+    border-radius: .5rem;
+}
+
+
+form .input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+}
+
+.input-box input {
+    margin-top: .8rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.input-box input:focus {
+    outline: 2px solid var(--green);
+}
+
+form button {
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-top: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: var(--white);
+    background: var(--orange);
+    margin-bottom: 1.6rem;
+}
+
+form button:hover {
+    background-color: var(--grey);
+    cursor: pointer;
+    transition: .4s;
+}
+
+main p {
+    text-align: center;
+}
