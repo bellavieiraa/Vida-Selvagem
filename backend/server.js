@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken")
 
 const app = express()
 
-const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, SECRET_KEY } = process.env
+const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, SECRET_KEY} = process.env
 
 app.use(cors())
 app.use(express.json())

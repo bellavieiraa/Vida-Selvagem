@@ -1,5 +1,11 @@
 @import "../../css/global.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 :root {
   --green: #256A58;
   --white: #fff;
@@ -19,15 +25,14 @@ body {
 }
 
 header {
-  position: fixed; /* Fixa o elemento no topo */
-  top: 0; /* Alinha ao topo da página */
-  left: 0; /* Alinha ao início da página */
-  width: 100%; 
-  background-color: var(--green);
-  padding: 0.625rem;
-  display: flex;
-  text-align: center;
+  background-color: var(--green); 
+   padding: 0.625rem; 
+   display: flex;
+   text-align: center;
+
 }
+
+
 
 .botao a{
   color: var(--white);
@@ -96,6 +101,7 @@ main {
 
 
 form .input-box {
+    color: var(--white);
     display: flex;
     flex-direction: column;
     margin-bottom: 1.6rem;

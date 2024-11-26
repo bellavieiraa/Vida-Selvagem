@@ -15,6 +15,8 @@
     font-size: 16px; 
 }
 
+
+
 body {
   background-image: url("../theo/img-white/fundo-cinz.png");
   background-repeat: no-repeat;
@@ -29,6 +31,16 @@ header {
    display: flex;
    text-align: center;
 }
+
+.botao a{
+    color: var(--white);
+    font-family: "Archivo Black", sans-serif;
+    color: var(--white);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  
 
   
 .logo img {
@@ -80,8 +92,8 @@ main {
     border-radius: .5rem;
 }
 
-
 form .input-box {
+    color: var(--white);
     display: flex;
     flex-direction: column;
     margin-bottom: 1.6rem;
@@ -118,4 +130,5 @@ form button:hover {
 
 main p {
     text-align: center;
+    
 }

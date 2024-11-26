@@ -32,11 +32,11 @@ body {
 
 .vamos {
   
-  width: 12rem; /* reduced 15.938rem to 11.953rem */
-  height: 5rem; /* reduced 6.125rem to 4.594rem */
+  width: 12rem; 
+  height: 5rem; 
   object-fit: contain;
   border-radius: 2.5rem; 
-  border: #fff;/* reduced 3.313rem to 2.469rem */
+  border: #fff;
   background-color: #ff9600;
  
 
@@ -136,12 +136,12 @@ header p {
 
 .entrar {
   z-index: 2;
-  width: 10rem; /* reduced 15.938rem to 11.953rem */
-  height: 3rem; /* reduced 6.125rem to 4.594rem */
+  width: 10rem; 
+  height: 3rem; 
   object-fit: contain;
 
   border-radius: 2.5rem; 
-  border: #fff;/* reduced 3.313rem to 2.469rem */
+  border: #fff;
   background-color: #ff9600;
   
   margin-top: 1.5rem;
@@ -152,12 +152,12 @@ header p {
 
 .cadastro {
   z-index: 2;
-  width: 10rem; /* reduced 15.938rem to 11.953rem */
-  height: 3rem; /* reduced 6.125rem to 4.594rem */
+  width: 10rem; 
+  height: 3rem; 
   object-fit: contain;
 
   border-radius: 2.5rem; 
-  border: #fff;/* reduced 3.313rem to 2.469rem */
+  border: #fff;
   background-color: #ff9600;
   
   margin-top: 1.5rem;
@@ -168,12 +168,12 @@ header p {
 
 .ranking {
   z-index: 2;
-  width: 10rem; /* reduced 15.938rem to 11.953rem */
-  height: 3rem; /* reduced 6.125rem to 4.594rem */
+  width: 10rem; 
+  height: 3rem; 
   object-fit: contain;
 
   border-radius: 2.5rem; 
-  border: #fff;/* reduced 3.313rem to 2.469rem */
+  border: #fff;
   background-color: #ff9600;
   
   margin-top: 1.5rem;
@@ -182,13 +182,13 @@ header p {
   
 }
 
-.sair {
+.user button {
   z-index: 2;
-  width: 10rem; /* reduced 15.938rem to 11.953rem */
-  height: 3rem; /* reduced 6.125rem to 4.594rem */
+  width: 10rem; 
+  height: 3rem; 
   object-fit: contain;
   border-radius: 2.5rem; 
-  border: #fff;/* reduced 3.313rem to 2.469rem */
+  border: #fff;
   background-color: #ff9600;
   font-family: "Archivo Black", sans-serif;
   color: var(--white);
